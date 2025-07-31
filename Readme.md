@@ -1,6 +1,6 @@
 KIRANA-STORE
 
-A full-featured e-commerce grocery store built using the MERN stack (MongoDB, Express.js, React.js, Node.js). KIRANA-STORE enables users to browse grocery products, manage their carts, and experience a dynamic shopping flow, with features such as authentication, payments, and responsive design.
+A full-featured e-commerce grocery store built using the MERN stack (MongoDB, Express.js, React.js, Node.js). Kirana store enables users to browse grocery products, manage their carts, and experience a dynamic shopping flow, with features such as authentication, payments, and responsive design.
 
 Table of Contents
 Features
@@ -43,59 +43,7 @@ Razorpay (Demo API Integration)
 Installation
 To set up the project locally, follow these steps:
 
-Clone the repository
 
-bash
-Copy code
-git clone https://github.com/143KRISHU/KIRANA-STORE.git
-Navigate to the project directory
-
-bash
-Copy code
-cd KIRANA-STORE
-Install server dependencies
-
-bash
-Copy code
-cd backend
-npm install
-Install frontend dependencies
-
-bash
-Copy code
-cd ../frontend
-npm install
-Set up environment variables
-Create a .env file in the root directory of both the frontend and backend folders. Add the following:
-
-For backend:
-
-makefile
-Copy code
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-RAZORPAY_API_KEY=your_razorpay_key
-RAZORPAY_API_SECRET=your_razorpay_secret
-For frontend:
-
-makefile
-Copy code
-REACT_APP_RAZORPAY_KEY=your_razorpay_key
-Start the development server
-In one terminal, run the backend server:
-
-arduino
-Copy code
-cd backend
-npm run dev
-In another terminal, start the frontend:
-
-bash
-Copy code
-cd frontend
-npm start
-Access the application
-Open your browser and go to http://localhost:3000.
 
 Usage
 Sign up or log in to explore the product listings.
