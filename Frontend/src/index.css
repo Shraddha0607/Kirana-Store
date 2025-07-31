@@ -1,0 +1,304 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+      height: 100vh;
+      box-sizing: border-box;
+}
+
+body {
+      position: relative;
+      margin: 0;
+      min-height: 100vh;
+      padding-bottom: 6.47rem; 
+      box-sizing: inherit;
+      background-color: #EDF6F9;
+      height: fit-content;
+
+}
+
+.main {
+      position: relative;
+      top: 4rem;
+      margin: 0;
+      min-height: 100%;
+      box-sizing: inherit;
+      padding-bottom: 6.47rem; 
+}
+
+header {
+      position: fixed;
+      z-index: 999;
+}
+/* For screens below 500px, fix the layout */
+@media screen and (max-width: 500px) {
+      body {
+            width: 500px;
+            /* Set a fixed width */
+            overflow-x: auto;
+            /* Allow horizontal scrolling if content overflows */
+      }
+
+      .main {
+            width: 500px;
+            padding-bottom: 400px;
+            /* Force a fixed width */
+      }
+
+      /* Disable flex or grid layout adjustments */
+      .flex-container,
+      .grid-container {
+            display: block;
+            /* Disable flex or grid responsiveness */
+      }
+
+      /* Adjust other elements as needed to maintain the fixed layout */
+      .header,
+      .footer {
+            width: 500px;
+            /* Fix header and footer width */
+      }
+      .footer{
+            bottom: 0px;
+      }
+}
+
+/* Product Card Component CSS */
+.details {
+      border-bottom-left-radius: 0.7rem;
+      border-bottom-right-radius: 0.7rem;
+}
+
+.details:hover {
+      background-color: #83c5bf91;
+}
+
+.hidden-scrollbar {
+      overflow: auto;
+      /* Ensure the content can scroll */
+      scrollbar-width: none;
+      /* For Firefox */
+      -ms-overflow-style: none;
+      /* For Internet Explorer and Edge */
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+      display: none;
+      /* For Chrome, Safari, and Opera */
+}
+
+/*  Home page Top category nav CSS */
+.hidden-scrollbar2::-webkit-scrollbar {
+      display: none;
+      /* For Chrome, Safari, and Opera */
+}
+
+/* home page banner forward and backward button CSS */
+.edgeRound-left {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+}
+
+.edgeRound-right {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+}
+
+.userSelectNone {
+      user-select: none;
+}
+
+@media (max-width:767px) {
+      .loadingDiv {
+            height: 5rem;
+            width: 100%;
+      }
+
+      .mainProductDivCinatiner {
+            flex-direction: column;
+      }
+
+      .title {
+            font-size: 18px;
+      }
+
+      .category-image {
+            height: 5rem;
+            width: 5rem;
+      }
+}
+
+@media (max-width:639px) {
+      .bannerDiv {
+            height: 8rem
+      }
+
+      .circleBubble {
+            left: 35%
+      }
+}
+
+@media(width:540px) {
+      .circleBubble {
+            left: 45%
+      }
+}
+
+/* ForgotPassword Page CSS */
+.forgotPasswordForm input:disabled,
+button:disabled {
+      background-color: #f0f0f0;
+      color: #a0a0a0;
+      cursor: not-allowed;
+}
+
+/* This is the CSS to remove the scroll of the Number input  */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+}
+
+/* Product Detail Page - Media Queries And CSS */
+@media(max-width:1023px) {
+      .displayMainConatinare {
+            flex-direction: column;
+            align-items: center;
+      }
+
+      .imageDisplayDiv {
+            flex-direction: column;
+      }
+
+      .sideImasgesDisplay {
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+      }
+
+      .activeImageDiv {
+            height: 100%;
+            max-width: 25rem;
+      }
+
+      .allSideImages {
+            height: 4rem;
+            width: 4rem;
+      }
+}
+
+@media(max-width:514px) {
+      .productDescriptionConatiner {
+            padding-top: 1rem;
+            padding-left: 0.5rem;
+      }
+
+      .productName {
+            font-size: 2rem;
+      }
+
+      .productBrand {
+            font-size: 1rem;
+            padding: 0.10rem;
+      }
+
+      .addToCartBtn p {
+            display: none;
+      }
+
+      .buyTheProductBtn p {
+            display: none;
+      }
+}
+
+/* Review Form CSS */
+.review-form input {
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+}
+
+.review-form input:focus {
+      outline: none;
+      border: none;
+}
+
+.review-form button {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      font-size: 1.75rem;
+}
+
+/* User info and Admin Pannel CSS */
+
+/* Text Filed */
+#outlined-basic {
+      font-size: large !important;
+      padding: 14px 14px !important;
+      background-color: #fff;
+}
+
+#outlined-basic-otp {
+      font-size: 14px !important;
+      padding: 12px 12px !important;
+      text-align: center !important;
+}
+
+#outlined-basic-disabled {
+      font-size: large !important;
+      padding: 12px 12px !important;
+      cursor: not-allowed !important;
+}
+
+#formsavebtn {
+      padding-left: 30px;
+      padding-right: 30px;
+      box-shadow: none !important;
+      background-color: #006D77;
+      font-size: 18px;
+      width: fit-content;
+}
+
+#formsavebtn:hover {
+      padding-left: 30px;
+      padding-right: 30px;
+      background-color: #fff;
+      color: #006D77;
+      border: 0.5px solid black;
+}
+
+#otpVerifyBtn {
+      padding: 8px 26px 8px 26px !important;
+      box-shadow: none !important;
+      background-color: #006D77;
+      font-size: 15px;
+      width: fit-content;
+}
+
+#otpVerifyBtn:hover {
+      padding: 8px 25px 8px 25px !important;
+      background-color: #fff;
+      color: #006D77;
+      border: 0.5px solid black;
+}
+
+/* Radio button */
+#demo-controlled-radio-buttons-group {
+      color: #006D77 !important;
+      font-weight: bold;
+}
+
+/* CheckOut Page */
+
+@media (min-width: 1025px) and (max-width: 1279px) {
+      .chckoutpage-section-two {
+            width: 62%;
+      }
+}
+
+@media (min-width: 1280px) {
+      .chckoutpage-section-two {
+            width: 72%;
+      }
+}

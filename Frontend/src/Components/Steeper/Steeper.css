@@ -1,0 +1,24 @@
+.label-item {
+      @apply relative flex flex-col justify-center items-center w-full gap-2
+}
+
+.label-item:not(:first-child):before {
+      @apply content-[''] bg-slate-300 absolute w-full h-[3px] right-2/4 top-[30%] -translate-y-2/4;
+}
+
+.complete-label:not(:first-child):before,
+.active-label:not(:first-child):before {
+      @apply content-[''] bg-green-600 absolute w-full h-[3px] right-2/4 top-[30%] -translate-y-2/4;
+}
+
+.item {
+      @apply w-10 h-10 flex justify-center items-center z-10 relative bg-[#006D77] rounded-full text-[#fff] font-semibold
+}
+
+.active {
+      @apply bg-blue-600
+}
+
+.complete {
+      @apply bg-green-600
+}
